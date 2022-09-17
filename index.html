@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NLW Esports</title>
+
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+    <body>
+        
+        
+        <header>
+            <div>
+                <img 
+                src="https://github.com/CaioLemosKot.png" 
+                alt="Foto de Caio Lemos Kot jogando poker" />
+            </div>
+        </header> 
+
+        <main>
+
+            <section>
+                <div>
+                    <h2>Sites Prediletos</h2>
+                    <p>Os sites em que eu mais acesso!</p>
+
+                    <ul class="favorite-sites">
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/">
+                                <img src="data:image/png;base64,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" 
+                                alt="Logo do site Twitch.tv">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.chess.com/">
+                                <img src="data:image/png;base64,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" 
+                                alt="Logo do site Chess.com">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.youtube.com/">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX/////AAD/ubn/+vr/9fX/6+v/j4//wMD/wcH/7u7/0tL/yMj/i4v/xcX/1dX/3d3/tLT/oqL/5ub/nZ3/MTH/bGz/S0v/lZX/pqb/hob/YmL/Pz//IiL/T0//dXX/qan/KSn/fX3/GRn/Vlb/OTn/4eH/gID/Tk7/Gxv/RUX/JSX/DQ3/W1v/rq5P/nF9AAAEd0lEQVR4nO2c2XaiQBRFjYCKIM4DjiERO4P+/++1U4wDmbjnUtXps5/SD+2qvVCq7lC3VCKEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGE/Pc4ru97nTSqB0GjVm1tFqN2tzscDitbwjAOw3D7x/bf3fZosWmVq7VGUI+aHc/3Xcf02jPx03q11a6s5uPZpDd9vRPyOu1NZuP5qtJu1aLUNSjmBYuwP+hJhb6m96cfLoJOsXZBPNA3u2aStPxi9Nxh8XZvDFoFCI7M+e14KCv7+ROzglseVd8+kWm9PU09wbpptyN1LcGmabMTSk/RMe11hs7h59G01hlrDcGaaasLAgXDB9NSF9zjBe16hBoP8dm00hVjtKBv2ugG9Ou0alroBvTXdGVa6IYh2HBpWuiGAVbQpvPMG1hDe46k72ATG/a9aO7uGlDDtmmdDEZQw7lpnQwSqOHMtE4Gj1BD0zaZIAVt3Cyw5zbPtEwmyO3CjhzbNRHQsGFaJpMa0LAlWYfkP3/KBmgo2fDLJUcpMOkCDSuCdewKDR2V/TQGGiaCdRxKKcETSOuMOdCwL1jHW7EIX7RCpmokBdFTOcxNUGpHJkBDSTH7rODXxJaOe0DDF8E6LkqaZWRe+QloKFnHVdEWWSO307DkSl5bl+CO3qLQ4rbwHqESdzhDF2soOwWeges+EQVP2c0TIcIQFz6leMOSt5Yb4ordomzphw0w9XupIS5AFAXAn7T4bISGuJ4MUZfJZ01MwrgKZxhoGW5/4pK4CldgEyUxvmpEa0xzfzQur69qWCp18350FWYoqst8o5nQyVk0+HcMt/tRrp5HXCdmWd0w3yEHZ6j/DP2x2kfbYZjzlIr7HSq/S3NHGrikt6phlL+xGrcfKp5pfEnEjzvTqJ1LhVkb3LlUK7aoCu8Q4aInnfiwKW53xEXAGjG+C2jvSGGGCnma3KftczyYITzXVsOkvnG3Z8D50hRVvrA0I+wkID9ou4lkGVeGyA45nGApf6LhyrAhziCe8QI0BNUPU+y1myXQULI3nwydGOZ2ANkHjajjS9O/t/SBholgHQfDuqSM/AHIBlNJpWhn6Knce6sADYU9Uegf4JE20FDyG9Lra0NeXbft4toB5L0gO/tLkbeBO6ZlMsEFT7b2eQMF7ezVf4UaGphl8iXY+9w23plZQQ1//72n33937fffP7Rxu4AKyqJ8HcD3gC28y42MnXbY96rBvmhsnKkAHxdl21yMGVrQuq8prkvhhF3zabDH7gN2PUSV4Xs2zYlCXgh6x6ZzjdKMSHsOp+i98IQtM/cUJ2DakXNT2Cje8c2nM6a4Doxs1DLY3wQ9PCmLEbKO+0MqBQ3abXbHkrp3Tp5jtVdoJm5U7ibrZQFnuZdBPxwFyAT3D3E6zaC8GMZJf/28vJcbHwd6J5X2plpPC/pW/gzH9b3bmeyV/Uj2OI7DONz/fRrKXmvsh7KnHc/WoeyEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEkEL5C8QlWqF/Wn05AAAAAElFTkSuQmCC" 
+                                alt="Logo do site Youtube.com">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Canais e Streamers</h2>
+                    <p>Lista de canais e transmissões que não perco!</p>
+
+                    <ul class="channel-list">
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/gaules">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-150x150.png" 
+                                alt="Imagem do capacete do Gaules">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/casimito">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/32805a78-d927-48bd-8089-bf5efed53ea4-profile_image-150x150.png" 
+                                alt="Imagem do Canal do Casemiro ou Casemito">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/chesscompt">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ce15a79-cbc3-4967-8cad-385ba291edd4-profile_image-150x150.png" 
+                                alt="Imagem do Chess.com">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.youtube.com/user/Desimpedidos">
+                                <img src="https://yt3.ggpht.com/p-iIdoTvnNEDmCN0CONQXx0dKityWrz_kV5g2iC5crQ4CE4xv9a5qsiTSvtJ833ykA_q7_UnWOc=s176-c-k-c0x00ffffff-no-rj-mo" 
+                                alt="Imagem do Canal Desimpedidos">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.youtube.com/c/XadrezBrasil">
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu-j4STKRqzyLLqrJ2ohKn-Hdkc-ZSWYEO3zgABWk_s=s176-c-k-c0x00ffffff-no-rj-mo" 
+                                alt="Imagem do Canal Xadrez Brasil">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Minhas redes</h2>
+                    <p>Se conecte comigo agora mesmo!</p>
+
+                    <ul class="social-list">
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.instagram.com/lemoskot/">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#FA41FE" stroke-width="2" stroke-miterlimit="10"/>
+                                    <path d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z" stroke="#FA41FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z" fill="#FA41FE"/>
+                                </svg>
+                                
+                            </a>
+                        </li>
+
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://twitter.com/Lkot77102520">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z" stroke="#2871FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html> 
